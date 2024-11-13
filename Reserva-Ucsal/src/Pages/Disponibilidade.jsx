@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function VerDisponibilidade() {
-  // Dados fictícios de espaços e horários disponíveis
+  
+  // Exemplos de dados que podemos usar
   const [espacos, setEspacos] = useState([
     {
       id: 1,

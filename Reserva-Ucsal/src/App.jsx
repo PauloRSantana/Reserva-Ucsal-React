@@ -8,6 +8,7 @@ import TelaProfessor from './Pages/Professor';
 import CriarSolicitacao from './Pages/Solicitacoes';
 import EditarSolicitacao from './Pages/EditarSolicitacao';
 import VerDisponibilidade from './Pages/Disponibilidade';
+import TelaGestor from './Pages/Gestor';
 
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
       <Route path='/solicitacoes' element={<CriarSolicitacao/>}/>
       <Route path='/editar' element={<EditarSolicitacao/>}/>
       <Route path='/disponibilidade' element={<VerDisponibilidade/>}/>
+      <Route path='/gestor' element={<TelaGestor/>}/>
+
 
 
 

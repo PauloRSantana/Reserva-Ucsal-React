@@ -1,9 +1,10 @@
-import { Link } from 'react-router-dom'; // Importe o Link do React Router
+import { Link } from 'react-router-dom';
 
 function TelaProfessor() {
   return (
     <div className="container mt-5">
       <div className="row">
+
         {/* Resumo das Próximas Reservas */}
         <div className="col-md-6 mb-4">
           <div className="card shadow-sm">
