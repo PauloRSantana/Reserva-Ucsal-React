@@ -10,5 +10,5 @@
 body{
   min-height: 100vh;
   width: 100vw;
-  background: linear-gradient(180deg, #4f4ae4 0%, rgba(218, 232, 110, 0.8)100%);
+  background: linear-gradient(180deg, #4f4ae4 0%, rgba(255, 183, 77, 0.9) 100%);
 }

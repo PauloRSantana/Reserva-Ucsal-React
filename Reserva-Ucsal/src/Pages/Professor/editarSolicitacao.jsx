@@ -21,6 +21,14 @@ function EditarSolicitacao() {
       horario: '10:00 - 12:00',
       espaco: 'Laboratório',
       status: 'Pendente'
+    },
+
+    {
+      id: 3,
+      data: '30/11/2024',
+      horario: '10:00 - 12:00',
+      espaco: 'Laboratório',
+      status: 'Pendente'
     }
   ]);
 
@@ -131,6 +139,11 @@ function EditarSolicitacao() {
                   >
                     Salvar Alterações
                   </button>
+
+                  <button type="button" className="btn btn-secondary " onClick={() => window.history.back()}>
+                    Voltar
+                  </button>
+                  
                 </form>
               </div>
             </div>

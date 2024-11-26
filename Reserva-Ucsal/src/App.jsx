@@ -1,14 +1,17 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Login from './Pages/Login'
-import Cadastro from './Pages/Cadastro'
+import Login from './Pages/Principais/Login'
+import Cadastro from './Pages/Principais/Cadastro'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import BoasVindas from './Pages/BoasVindas';
-import TelaProfessor from './Pages/Professor';
-import CriarSolicitacao from './Pages/Solicitacoes';
-import EditarSolicitacao from './Pages/EditarSolicitacao';
-import VerDisponibilidade from './Pages/Disponibilidade';
-import TelaGestor from './Pages/Gestor';
+import BoasVindas from './Pages/Principais/BoasVindas';
+import TelaProfessor from './Pages/Professor/Professor';
+import CriarSolicitacao from './Pages/Professor/criarSolicitacao';
+import EditarSolicitacao from './Pages/Professor/editarSolicitacao';
+import VerDisponibilidade from './Pages/Professor/verDisponibilidade';
+import TelaGestor from './Pages/Gestor/Gestor';
+import SolicitacoesCadastro from './Pages/Gestor/solicitacaoCadastro';
+import AjustarDisponibilidade from './Pages/Gestor/ajustarDisponibilidade';
+import SolicitarReservas from './Pages/Gestor/solicitacaoReservas';
 
 
 function App() {
@@ -24,6 +27,9 @@ function App() {
       <Route path='/editar' element={<EditarSolicitacao/>}/>
       <Route path='/disponibilidade' element={<VerDisponibilidade/>}/>
       <Route path='/gestor' element={<TelaGestor/>}/>
+      <Route path='/solicitacaocad' element={<SolicitacoesCadastro/>}/>
+      <Route path='/ajustar-disponibilidade' element={<AjustarDisponibilidade/>}/>
+      <Route path='/solicitacao-reserva' element={<SolicitarReservas/>}/>
 
 
 

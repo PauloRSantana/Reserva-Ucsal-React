@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 function TelaGestor() {
   return (
     <div className="container mt-5">
+      <h3>Seja bem-vindo, Gestor!</h3>
       <div className="row">
         {/* Visualizar Professores Solicitando Cadastro */}
         
@@ -24,11 +25,6 @@ function TelaGestor() {
                   <strong>Data Solicitação:</strong> 16/11/2024
                 </li>
               </ul>
-            </div>
-            <div className="card-footer text-center">
-              <Link to="/cadastro-professores" className="btn btn-primary">
-                Ver Todos os Pedidos
-              </Link>
             </div>
           </div>
         </div>
@@ -51,11 +47,6 @@ function TelaGestor() {
                 </li>
               </ul>
             </div>
-            <div className="card-footer text-center">
-              <Link to="/ajustar-disponibilidade" className="btn btn-warning">
-                Ajustar Disponibilidade
-              </Link>
-            </div>
           </div>
         </div>
       </div>
@@ -74,23 +65,15 @@ function TelaGestor() {
                   <strong>Data:</strong> 25/11/2024 <br />
                   <strong>Horário:</strong> 14:00 - 16:00 <br />
                   <strong>Espaço:</strong> Sala de Aula 102 <br />
-                  <button className="btn btn-success btn-sm mt-2">Aceitar</button>
-                  <button className="btn btn-danger btn-sm mt-2 ms-2">Recusar</button>
                 </li>
                 <li className="list-group-item">
                   <strong>Data:</strong> 30/11/2024 <br />
                   <strong>Horário:</strong> 10:00 - 12:00 <br />
                   <strong>Espaço:</strong> Laboratório <br />
-                  <button className="btn btn-success btn-sm mt-2">Aceitar</button>
-                  <button className="btn btn-danger btn-sm mt-2 ms-2">Recusar</button>
                 </li>
               </ul>
             </div>
-            <div className="card-footer text-center">
-              <Link to="/reservas" className="btn btn-primary">
-                Ver Todas as Solicitações
-              </Link>
-            </div>
+            
           </div>
         </div>
 
@@ -103,15 +86,15 @@ function TelaGestor() {
             <div className="card-body">
               <div className="list-group">
 
-                <Link to="/ajustar-disponibilidade" className="list-group-item list-group-item-action">
+                <Link to="/ajustar-disponibilidade" className="button" class="btn btn-primary mb-1">
                   Ajustar Disponibilidade das Salas
                 </Link>
 
-                <Link to="/aceitar-solicitacoes" className="list-group-item list-group-item-action">
+                <Link to="/solicitacao-reserva" className="btn btn-warning mb-1">
                   Aceitar/Recusar Solicitações de Reservas
                 </Link>
 
-                <Link to="/cadastro-professores" className="list-group-item list-group-item-action">
+                <Link to="/solicitacaocad" className="btn btn-success">
                   Visualizar Solicitações de Cadastro de Professores
                 </Link>
 
@@ -125,7 +108,7 @@ function TelaGestor() {
 
       <div className="row">
         {/* MANUTENÇÃO!!! (vai ser criada uma página para enviar informaçöes para o suporte) */}
-        <div className="col-md-12 text-center">
+        <div className="col-md-12">
           <a href="#" className="btn btn-info">
             Precisa de ajuda? Acesse o Suporte
           </a>

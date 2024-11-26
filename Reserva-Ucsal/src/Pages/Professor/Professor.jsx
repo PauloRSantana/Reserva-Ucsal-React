@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 function TelaProfessor() {
   return (
     <div className="container mt-5">
+      <h3>Seja bem-vindo, Professor!</h3>
       <div className="row">
 
         {/* Resumo das Próximas Reservas */}
-        <div className="col-md-6 mb-4">
+        <div className="col-md-8 mb-4">
           <div className="card shadow-sm">
-            <div className="card-header">
+            <div className="card-header"> 
               <h5 className="mb-0">Próximas Reservas</h5>
             </div>
             <div className="card-body">
@@ -29,7 +30,7 @@ function TelaProfessor() {
         </div>
 
         {/* Status de Solicitações Pendentes */}
-        <div className="col-md-6 mb-4">
+        <div className="col-md-4 mb-4">
           <div className="card shadow-sm">
             <div className="card-header">
               <h5 className="mb-0">Solicitações Pendentes</h5>
@@ -54,11 +55,13 @@ function TelaProfessor() {
 
       <div className="row">
         {/* Notificações Recentes */}
-        <div className="col-md-6 mb-4">
+        <div className="col-md-8 mb-4">
           <div className="card shadow-sm">
             <div className="card-header">
               <h5 className="mb-0">Notificações Recentes</h5>
             </div>
+
+            {/* Informações das notificações */}
             <div className="card-body">
               <ul className="list-group">
                 <li className="list-group-item">
@@ -76,22 +79,22 @@ function TelaProfessor() {
         </div>
 
         {/* Atalhos para Ações Comuns */}
-        <div className="col-md-6 mb-4">
+        <div className="col-md-4 mb-4">
           <div className="card shadow-sm">
             <div className="card-header">
               <h5 className="mb-0">Ações Rápidas</h5>
             </div>
+            
             <div className="card-body">
               <div className="list-group">
-                {/* Alteração do <a> para <Link> */}
-                <Link to="/solicitacoes" className="list-group-item list-group-item-action">
+                <Link to="/solicitacoes" className="button" class="btn btn-primary mb-1" >
                   Criar nova solicitação
                 </Link>
-                <Link to="/editar" className="list-group-item list-group-item-action">
+                <Link to="/editar" className="button" class="btn btn-warning mb-1 ">
 	              Editar solicitações existentes
                 </Link>
 
-                <Link to="/disponibilidade" className="list-group-item list-group-item-action">
+                <Link to="/disponibilidade" className="button" class="btn btn-success">
                   Ver disponibilidade dos espaços
                 </Link>
               </div>

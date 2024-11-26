@@ -9,7 +9,6 @@ function CriarSolicitacao() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar a solicitação
     alert('Solicitação enviada com sucesso!');
   };
 
